@@ -18,6 +18,12 @@ Please Feel free to fork and/or PR if you have any additions.
 - Delete everything in a directory - `rm /path/to/dir/*`
 - Remove all sub-directories and files - `rm -r /path/to/dir/*`
 - Find and replace whole words in vim - `:%s/\<word\>\C/newword/g`
+- To remove a folder with all its contents (including all interior folders): `rm -rf /path/to/directory`
+- To remove all the contents of the folder (including all interior folders) but not the folder itself: `rm -rf /path/to/directory/*`
+- or, if you want to make sure that hidden files/directories are also removed: `rm -rf /path/to/directory/{*,.*}`
+- To remove all the "files" from inside a folder(not removing interior folders): `rm -f /path/to/directory/{*,.*}`
+
+
 
 **Openssl**
 
